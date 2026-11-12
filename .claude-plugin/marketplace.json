@@ -1,0 +1,42 @@
+{
+  "name": "hillock",
+  "owner": {
+    "name": "Hillock NeuroTech"
+  },
+  "metadata": {
+    "description": "The neurotech workflow suite for Claude: 30 skills in 5 bundles plus a router.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "neuro-router",
+      "source": "./plugins/neuro-router",
+      "description": "Start here. Routes any neurotech or BCI request to the right Hillock skill and hands NWB/BIDS data-standard work to existing community skills."
+    },
+    {
+      "name": "neuro-decoding",
+      "source": "./plugins/neuro-decoding",
+      "description": "Decoder evaluation workflows for BCI and neural data: leak-free splits, true chance levels, cross-day stability, dataset quirks, seizure and sleep scoring, foundation-model comparisons."
+    },
+    {
+      "name": "neuro-signal",
+      "source": "./plugins/neuro-signal",
+      "description": "Signal-analysis review workflows: EEG/MEG preprocessing, spike-sorting QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics."
+    },
+    {
+      "name": "neuro-realtime",
+      "source": "./plugins/neuro-realtime",
+      "description": "Real-time and closed-loop BCI workflows: streaming pipelines, clock sync forensics, stimulus timing, phase-locked stimulation, artifact recovery and decoder-to-firmware ports."
+    },
+    {
+      "name": "neuro-stim",
+      "source": "./plugins/neuro-stim",
+      "description": "Neuromodulation research-engineering workflows: stimulation safety limits, TMS/tES field modeling, DBS sensing data, focused-ultrasound dosing, nerve-stimulation models and sham design. Research support, not clinical decisions."
+    },
+    {
+      "name": "neuro-device",
+      "source": "./plugins/neuro-device",
+      "description": "Neural-device engineering workflows: recording front ends, electrode electrochemistry, implant power and thermal budgets, regulatory test mapping and SOUP inventories. Engineering support, not certification."
+    }
+  ]
+}

@@ -1,5 +1,18 @@
 {
   "name": "neuro-router",
-  "description": "Thin index that points to the right neuro skill and hands NWB and BIDS work to CatalystNeuro and K-Dense.",
-  "version": "0.0.1"
+  "description": "Start here. Routes any neurotech or BCI request to the right Hillock skill and hands NWB/BIDS data-standard work to existing community skills.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hillock NeuroTech"
+  },
+  "homepage": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "repository": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "license": "MIT",
+  "keywords": [
+    "neurotech",
+    "bci",
+    "eeg",
+    "neural-engineering",
+    "hillock"
+  ]
 }

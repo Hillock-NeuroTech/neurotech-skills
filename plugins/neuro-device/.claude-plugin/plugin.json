@@ -1,5 +1,18 @@
 {
   "name": "neuro-device",
-  "description": "Neural device engineering: front-end design, electrode electrochemistry, implant power and thermal budgets, regulatory mapping. Not certification.",
-  "version": "0.0.1"
+  "description": "Neural-device engineering workflows: recording front ends, electrode electrochemistry, implant power and thermal budgets, regulatory test mapping and SOUP inventories. Engineering support, not certification.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hillock NeuroTech"
+  },
+  "homepage": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "repository": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "license": "MIT",
+  "keywords": [
+    "neurotech",
+    "bci",
+    "eeg",
+    "neural-engineering",
+    "hillock"
+  ]
 }

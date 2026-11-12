@@ -1,5 +1,18 @@
 {
   "name": "neuro-stim",
-  "description": "Neuromodulation research engineering: stimulation safety limits, field and nerve modelling, implant sensing data, sham design. Research support only, not clinical decisions.",
-  "version": "0.0.1"
+  "description": "Neuromodulation research-engineering workflows: stimulation safety limits, TMS/tES field modeling, DBS sensing data, focused-ultrasound dosing, nerve-stimulation models and sham design. Research support, not clinical decisions.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hillock NeuroTech"
+  },
+  "homepage": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "repository": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "license": "MIT",
+  "keywords": [
+    "neurotech",
+    "bci",
+    "eeg",
+    "neural-engineering",
+    "hillock"
+  ]
 }

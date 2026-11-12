@@ -1,5 +1,18 @@
 {
   "name": "neuro-signal",
-  "description": "Review of neural signal analysis: preprocessing, spike sorting QC, noise diagnosis, channel maps, connectivity and cluster statistics.",
-  "version": "0.0.1"
+  "description": "Signal-analysis review workflows: EEG/MEG preprocessing, spike-sorting QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hillock NeuroTech"
+  },
+  "homepage": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "repository": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "license": "MIT",
+  "keywords": [
+    "neurotech",
+    "bci",
+    "eeg",
+    "neural-engineering",
+    "hillock"
+  ]
 }
