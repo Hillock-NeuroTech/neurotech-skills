@@ -1,10 +1,16 @@
 # Contributing
 
-The most useful contribution is a task that makes a model fail. Every
-failure found is evidence for which skill to build, and for what the field
-should warn about.
+Hillock is only as good as the practice it encodes. Useful contributions:
 
-## Add a task
+- **Improve a skill**: a missing step, a better default, a newer tool,
+  a correction. Cite the source.
+- **Add a device, dataset or format** to the relevant skill.
+- **Add or improve a script** in a skill's `scripts/`, with a test case
+  that has a known answer.
+- **Review a bundle** as a practitioner; reviewed skills carry your name.
+- **Add a benchmark task** (below).
+
+## Add a benchmark task
 
 A good task has:
 

@@ -1,0 +1,2 @@
+req_id,requirement,source,safety_related,design_output,verification_id,verification_method,acceptance_criterion,result,hazard_ids,risk_control,status
+REQ-001,Example: stimulation charge density per phase shall not exceed the electrode's measured reversible limit,ISO 14971 hazard HAZ-012; ISO 14708-3,yes,Firmware amplitude and pulse-width limits (DOC-FW-07),VER-031,test (voltage transients in vitro),Emc within water window at max setting,,HAZ-012,Firmware-enforced parameter limits,open
