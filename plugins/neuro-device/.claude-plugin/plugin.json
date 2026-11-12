@@ -1,0 +1,5 @@
+{
+  "name": "neuro-device",
+  "description": "Neural device engineering: front-end design, electrode electrochemistry, implant power and thermal budgets, regulatory mapping. Not certification.",
+  "version": "0.0.1"
+}

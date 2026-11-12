@@ -1,0 +1,5 @@
+{
+  "name": "neuro-realtime",
+  "description": "Real-time and closed-loop BCI engineering: streaming, clock sync, stimulus timing, phase-locked stimulation, firmware ports.",
+  "version": "0.0.1"
+}

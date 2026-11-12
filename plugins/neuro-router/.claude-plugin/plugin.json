@@ -1,0 +1,5 @@
+{
+  "name": "neuro-router",
+  "description": "Thin index that points to the right neuro skill and hands NWB and BIDS work to CatalystNeuro and K-Dense.",
+  "version": "0.0.1"
+}

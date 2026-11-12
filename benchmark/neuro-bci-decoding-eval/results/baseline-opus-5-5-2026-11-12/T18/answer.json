@@ -1,0 +1,5 @@
+{
+  "ready_for_online_as_is": false,
+  "expected_online_accuracy": 0.714,
+  "explanation": "The offline 100% relies on non-causal filtfilt, whole-trial normalisation and band power over the full 4 s, none of which are available when feedback is given every 250 ms from trial onset; a causal simulation using only data available at each tick gives a mean feedback accuracy of ~71%, so the pipeline needs a causal, short-window redesign before closed loop."
+}

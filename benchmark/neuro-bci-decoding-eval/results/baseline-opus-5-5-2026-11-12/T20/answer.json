@@ -1,0 +1,4 @@
+{
+  "sentence": "On a public 9-subject motor-imagery dataset, the new decoder reached a mean accuracy of 78.0% versus 75.0% for the standard baseline (mean paired difference +3.0 percentage points, 95% CI -1.5 to 7.5; better in 6 of 9 subjects), but this difference was not statistically significant (paired t-test p = 0.16; Wilcoxon signed-rank p = 0.18), so the two decoders performed comparably.",
+  "claims_significant_improvement": false
+}

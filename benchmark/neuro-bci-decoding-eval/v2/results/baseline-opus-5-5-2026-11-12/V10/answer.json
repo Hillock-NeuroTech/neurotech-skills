@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.5142,
+  "top_features": [
+    "Cz_theta",
+    "C3_alpha",
+    "Fz_beta"
+  ]
+}

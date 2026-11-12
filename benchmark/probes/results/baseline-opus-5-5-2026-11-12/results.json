@@ -1,0 +1,30 @@
+{
+  "passed": 6,
+  "total": 6,
+  "tasks": {
+    "S1": {
+      "pass": true,
+      "detail": "median err 0.3, max 0.9 samples"
+    },
+    "S2": {
+      "pass": true,
+      "detail": "error 384 samples (0.8 s)"
+    },
+    "P1": {
+      "pass": true,
+      "detail": "Q=ok, D=ok, k=ok, not_applicable=ok, not_acceptable=ok"
+    },
+    "P2": {
+      "pass": true,
+      "detail": "q1=ok, d1=ok, q2=ok, d2=ok, exceeds=ok"
+    },
+    "F1": {
+      "pass": true,
+      "detail": "agreement 1.000 (normal 1.00, large-amplitude 1.00, small 1.00)"
+    },
+    "F2": {
+      "pass": true,
+      "detail": "offset 0.0, rms err 0.0, residual after impulse 0, sign flips 0"
+    }
+  }
+}

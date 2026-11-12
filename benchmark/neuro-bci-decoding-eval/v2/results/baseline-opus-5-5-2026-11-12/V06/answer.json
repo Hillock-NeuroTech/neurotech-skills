@@ -1,0 +1,5 @@
+{
+  "decoding_accuracy": 0.52,
+  "accuracy_reflects_choice_signal": false,
+  "explanation": "Naive shuffled 5-fold CV gives 0.66, but the EEG features (|r| with time up to 0.97) and the right-hand choice rate both drift across the session, and a model using only trial time does as well (0.68). Once slow trends are removed from the EEG, accuracy falls to chance (0.52; balanced accuracy within 10-min windows 0.48), so the pre-movement EEG does not show a decodable choice signal."
+}

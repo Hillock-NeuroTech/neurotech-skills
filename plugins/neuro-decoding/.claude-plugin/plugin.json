@@ -1,0 +1,5 @@
+{
+  "name": "neuro-decoding",
+  "description": "Honest evaluation of neural decoders: leak-free splits, real chance levels, cross-day stability, dataset quirks.",
+  "version": "0.0.1"
+}

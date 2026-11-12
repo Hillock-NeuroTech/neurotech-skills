@@ -1,0 +1,5 @@
+{
+  "name": "neuro-signal",
+  "description": "Review of neural signal analysis: preprocessing, spike sorting QC, noise diagnosis, channel maps, connectivity and cluster statistics.",
+  "version": "0.0.1"
+}

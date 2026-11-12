@@ -1,0 +1,6 @@
+{
+  "accuracy": 0.74,
+  "ci_low": 0.6463,
+  "ci_high": 0.816,
+  "ci_method": "Wilson score 95% binomial interval on the pooled out-of-fold correct count (74/100) from stratified 5-fold CV of standardized L2 logistic regression; it reflects test-set sampling only, not training-set variability."
+}

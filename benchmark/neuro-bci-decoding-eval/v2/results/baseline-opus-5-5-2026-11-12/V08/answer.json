@@ -1,0 +1,4 @@
+{
+  "reported_accuracy": 0.45,
+  "sentence": "Selecting the best of 40 decoder configurations by 5-fold cross-validation on the same 32 trials yielded a nominal accuracy of 78.1% (linear SVM, features 11-20), but this figure is optimistically biased by the selection; when the full selection procedure was evaluated with nested cross-validation (5 outer x 4 inner folds, 5 repeats), accuracy was 45% (range 31-56%), i.e. not above the 50% chance level, and the best-of-40 score exceeded only the 95th percentile of a label-permutation null for the maximum over 40 configurations by a small margin (null mean 67%, 95th percentile 75.7%, p = 0.04, 78 permutations), so this pilot does not provide reliable evidence of above-chance P300 decoding."
+}
