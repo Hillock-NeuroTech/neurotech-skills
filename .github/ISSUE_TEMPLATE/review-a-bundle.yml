@@ -1,0 +1,36 @@
+name: Review a bundle
+description: Offer or submit a practitioner review of one bundle
+title: "[review] "
+labels: ["review"]
+body:
+  - type: dropdown
+    id: bundle
+    attributes:
+      label: Bundle
+      options:
+        - neuro-router
+        - neuro-decoding
+        - neuro-signal
+        - neuro-realtime
+        - neuro-stim
+        - neuro-device
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: Your background
+      description: What you work on and for how long, so readers can weigh the review.
+    validations:
+      required: true
+  - type: textarea
+    id: findings
+    attributes:
+      label: Findings
+      description: For each skill you checked, what is right, what is wrong or missing, and what you would change.
+  - type: checkboxes
+    id: credit
+    attributes:
+      label: Credit
+      options:
+        - label: Add my name as a reviewer of this bundle in the README once the changes are made

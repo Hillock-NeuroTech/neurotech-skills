@@ -1,0 +1,31 @@
+name: Improve a skill
+description: A missing step, a better default, a newer tool or a correction
+title: "[skill] "
+labels: ["improve-skill"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: Name of the skill, for example neuro-bci-decoding-eval
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change
+      description: The step, default, tool or statement, and what it should say instead.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Paper, documentation, forum thread or your own lab practice that supports the change.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Where it went wrong (optional)
+      description: The request you gave Claude and what it did, if this came from real use.
