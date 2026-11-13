@@ -21,7 +21,7 @@
     {
       "name": "neuro-signal",
       "source": "./plugins/neuro-signal",
-      "description": "Signal-analysis review workflows: EEG/MEG preprocessing, spike-sorting QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics. EEG/MEG preprocessing includes working recipes for MNE-Python, EEGLAB, FieldTrip and Brainstorm."
+      "description": "Signal-analysis workflows: EEG/MEG preprocessing, spike sorting and QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics, with tool references for MNE, EEGLAB, FieldTrip, Brainstorm, SpikeInterface, Kilosort 4 and Neuropixels."
     },
     {
       "name": "neuro-realtime",

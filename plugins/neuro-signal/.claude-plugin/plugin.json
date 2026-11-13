@@ -1,6 +1,6 @@
 {
   "name": "neuro-signal",
-  "description": "Signal-analysis review workflows: EEG/MEG preprocessing, spike-sorting QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics.",
+  "description": "Signal-analysis workflows: EEG/MEG preprocessing, spike sorting and QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics, with tool references for MNE, EEGLAB, FieldTrip, Brainstorm, SpikeInterface, Kilosort 4 and Neuropixels.",
   "version": "0.1.0",
   "author": {
     "name": "Hillock NeuroTech"

@@ -62,6 +62,19 @@ rewrite them each time:
 | `power_budget.py` | neuro-implant-power-thermal-budget | data rate, power, heat flux |
 | `soup_inventory.py` | neuro-soup-inventory | IEC 62304 SOUP list from a repo |
 
+## Tool references
+
+Skills carry reference files with working recipes for the software the
+field uses, each listing that tool's traps and what to report. Recipes
+for Python libraries are checked against the current release.
+
+| Skill | References |
+|---|---|
+| neuro-file-formats | readers for about 50 acquisition systems (MNE, Neo, SpikeInterface, MATLAB routes) |
+| neuro-data-sources | archives, MOABB and MNE loaders, standard datasets by question |
+| neuro-eeg-preprocessing-review | MNE-Python, EEGLAB, FieldTrip, Brainstorm, and a table of equivalent steps |
+| neuro-spike-sorting-qc | SpikeInterface, Kilosort 4, curation (Bombcell, UnitRefine, Phy, UnitMatch), Neuropixels acquisition and sync |
+
 ## Quality
 
 Every skill follows published practice and cites its sources. Every

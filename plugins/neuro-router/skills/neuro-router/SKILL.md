@@ -32,7 +32,7 @@ research the method first. If several apply, run them in the order given.
 | Request | Skill |
 |---|---|
 | filtering, referencing, ICA, epoching, artifacts | neuro-eeg-preprocessing-review |
-| spike sorting, unit curation | neuro-spike-sorting-qc |
+| spike sorting, Kilosort or SpikeInterface settings, Neuropixels preprocessing, unit curation, Phy, Bombcell, units across days | neuro-spike-sorting-qc |
 | noisy recording, hum, spectrum peaks | neuro-noise-detective |
 | montage, probe map, swapped or bridged channels | neuro-channel-map-verifier |
 | coherence, PLV, wPLI, Granger, networks | neuro-connectivity-claims-check |
