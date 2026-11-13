@@ -44,7 +44,7 @@ What each skill does: [ROADMAP.md](ROADMAP.md).
 
 ## Built-in tools
 
-Thirteen tested scripts do the standard calculations so Claude does not
+Fifteen tested scripts do the standard calculations so Claude does not
 rewrite them each time:
 
 | Script | Skill | Does |
@@ -57,6 +57,8 @@ rewrite them each time:
 | `align_clocks.py` | neuro-sync-forensics | robust clock alignment with dropped and spurious pulses |
 | `photodiode_lag.py` | neuro-stimulus-timing-audit | display lag, jitter, frame drops |
 | `quantize_sos.py` | neuro-decoder-to-firmware | fixed-point filter coefficients, headroom, C header |
+| `percept_timedomain.py` | neuro-dbs-sensing-data | Percept streams rebuilt with lost packets as gaps |
+| `tus_indices.py` | neuro-tus-dose-planning | MI, Isppa, Ispta, CEM43 against ITRUSST levels |
 | `stim_calc.py` | neuro-stim-safety-check | charge, density, Shannon k, material limits, net DC |
 | `noise_budget.py` | neuro-frontend-design | input-referred noise by source |
 | `fit_eis.py` | neuro-electrode-electrochemistry | Randles-CPE impedance fit |
@@ -76,6 +78,10 @@ for Python libraries are checked against the current release.
 | neuro-eeg-preprocessing-review | MNE-Python, EEGLAB, FieldTrip, Brainstorm, and a table of equivalent steps |
 | neuro-spike-sorting-qc | SpikeInterface, Kilosort 4, curation (Bombcell, UnitRefine, Phy, UnitMatch), Neuropixels acquisition and sync |
 | neuro-realtime-bci-pipeline | LSL and LabRecorder/XDF, MNE-LSL replay, BrainFlow, PsychoPy and Psychtoolbox timing and triggers, BCI2000, OpenViBE and other frameworks |
+| neuro-nibs-field-modeling | SimNIBS 4.6 (TMS, tDCS, TI, optimisation, neuronavigation), ROAST |
+| neuro-dbs-sensing-data | Medtronic Percept export structure, perceive, Lead-DBS, OSS-DBS |
+| neuro-tus-dose-planning | k-Wave / k-wave-python, k-Plan, BabelBrain, Kranion, ITRUSST safety levels |
+| neuro-nerve-stim-modeling | field-coupled axons in NEURON, MRG, ASCENT |
 
 ## Quality
 

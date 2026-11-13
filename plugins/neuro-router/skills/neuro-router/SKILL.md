@@ -54,10 +54,10 @@ research the method first. If several apply, run them in the order given.
 | Request | Skill |
 |---|---|
 | charge, charge density, Shannon, safe limits | neuro-stim-safety-check |
-| TMS / tES field modeling, SimNIBS, dose | neuro-nibs-field-modeling |
-| DBS / implant sensing exports, aDBS | neuro-dbs-sensing-data |
-| focused ultrasound planning | neuro-tus-dose-planning |
-| peripheral nerve stimulation models | neuro-nerve-stim-modeling |
+| TMS / tES / TI field modeling, SimNIBS, ROAST, coil or montage optimisation, dose | neuro-nibs-field-modeling |
+| DBS / implant sensing exports (Percept JSON, RC+S, RNS), Lead-DBS, aDBS | neuro-dbs-sensing-data |
+| focused ultrasound planning, k-Wave, BabelBrain, MI and thermal dose | neuro-tus-dose-planning |
+| peripheral nerve stimulation models, NEURON, MRG, ASCENT | neuro-nerve-stim-modeling |
 | sham conditions, blinding | neuro-sham-and-blinding-design |
 
 ## Devices (neuro-device; engineering support only)
