@@ -8,6 +8,21 @@ description: Design or audit an EEG/MEG preprocessing pipeline (MNE-Python, EEGL
 Preprocessing choices can create or remove effects. Use this order and
 these defaults unless there is a reason not to, and record every choice.
 
+## 0. Load the toolbox reference
+
+Read the file for the toolbox in use before writing or reviewing code:
+
+| Toolbox | Reference |
+|---|---|
+| MNE-Python (and MNE-BIDS-Pipeline, MEG Maxwell filtering) | `references/mne.md` |
+| EEGLAB (clean_rawdata, ICLabel, ERPLAB) | `references/eeglab.md` |
+| FieldTrip | `references/fieldtrip.md` |
+| Brainstorm | `references/brainstorm.md` |
+| Moving between toolboxes, or reviewing a methods section | `references/equivalents.md` |
+
+Each has a working recipe, the toolbox's own traps, and what to report.
+Loading files of any format: `neuro-file-formats`.
+
 ## 1. Recommended order
 
 1. Inspect raw data: units, sampling rate, channel types, montage, events.
