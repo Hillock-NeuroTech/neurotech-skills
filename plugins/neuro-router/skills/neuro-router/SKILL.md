@@ -64,11 +64,11 @@ research the method first. If several apply, run them in the order given.
 
 | Request | Skill |
 |---|---|
-| amplifier, ADC, noise budget | neuro-frontend-design |
-| electrode impedance, CSC, charge-injection limit | neuro-electrode-electrochemistry |
+| amplifier, ADC, ADS1299, Intan, noise budget, PCB layout | neuro-frontend-design |
+| electrode impedance, EIS fitting, CSC, charge-injection limit, potentiostat data | neuro-electrode-electrochemistry |
 | implant power, data rate, heating | neuro-implant-power-thermal-budget |
-| standards, verification, traceability | neuro-device-regulatory |
-| SOUP list, SBOM | neuro-soup-inventory |
+| standards, verification, traceability, FDA product codes, 510(k)/PMA, MAUDE | neuro-device-regulatory |
+| SOUP list, SBOM, known vulnerabilities (OSV) | neuro-soup-inventory |
 
 ## Hand off instead of rebuilding
 

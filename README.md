@@ -44,7 +44,7 @@ What each skill does: [ROADMAP.md](ROADMAP.md).
 
 ## Built-in tools
 
-Fifteen tested scripts do the standard calculations so Claude does not
+Seventeen tested scripts do the standard calculations so Claude does not
 rewrite them each time:
 
 | Script | Skill | Does |
@@ -64,6 +64,8 @@ rewrite them each time:
 | `fit_eis.py` | neuro-electrode-electrochemistry | Randles-CPE impedance fit |
 | `power_budget.py` | neuro-implant-power-thermal-budget | data rate, power, heat flux |
 | `soup_inventory.py` | neuro-soup-inventory | IEC 62304 SOUP list from a repo |
+| `osv_check.py` | neuro-soup-inventory | known vulnerabilities for each SOUP item from OSV |
+| `fda_lookup.py` | neuro-device-regulatory | FDA class, clearances, approvals, MAUDE reports and recalls for a product code |
 
 ## Tool references
 
@@ -82,6 +84,11 @@ for Python libraries are checked against the current release.
 | neuro-dbs-sensing-data | Medtronic Percept export structure, perceive, Lead-DBS, OSS-DBS |
 | neuro-tus-dose-planning | k-Wave / k-wave-python, k-Plan, BabelBrain, Kranion, ITRUSST safety levels |
 | neuro-nerve-stim-modeling | field-coupled axons in NEURON, MRG, ASCENT |
+| neuro-frontend-design | ADS1299 and Intan RHD2000 datasheet figures, ADS1299 configuration, SPICE tools, layout |
+| neuro-electrode-electrochemistry | potentiostat exports, equivalent-circuit fitting, CSC and voltage transients |
+| neuro-implant-power-thermal-budget | bioheat modelling, wireless link heating, phantom testing |
+| neuro-device-regulatory | neurotech FDA product codes, FDA and EU databases, requirements tools |
+| neuro-soup-inventory | lock files, SBOM formats, OSV vulnerability review |
 
 ## Quality
 
