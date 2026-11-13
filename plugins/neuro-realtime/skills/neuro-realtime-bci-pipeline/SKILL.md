@@ -1,6 +1,6 @@
 ---
 name: neuro-realtime-bci-pipeline
-description: Build or debug a real-time / closed-loop BCI or neurofeedback pipeline (Lab Streaming Layer/pylsl, LabRecorder/XDF, BrainFlow, OpenBCI, g.tec, Brain Products, MNE-LSL, PsychoPy/Psychtoolbox feedback). Use whenever the user streams neural data live, sends event markers, filters or decodes online, gives feedback, measures latency or jitter, or moves an offline pipeline online.
+description: Build or debug a real-time / closed-loop BCI or neurofeedback pipeline (Lab Streaming Layer/pylsl, LabRecorder/XDF, BrainFlow with OpenBCI, Muse, Unicorn and about 70 boards, MNE-LSL, g.tec, Brain Products, PsychoPy/Psychtoolbox stimuli and triggers, BCI2000, OpenViBE, Timeflux, BciPy, MEDUSA, BRAND). Use whenever the user streams neural data live, sends event markers or triggers, filters or decodes online, gives feedback, checks a stream's sampling rate or dropped samples, measures latency or jitter, chooses a BCI framework, or moves an offline pipeline online.
 ---
 
 # Real-time BCI pipeline
@@ -8,6 +8,18 @@ description: Build or debug a real-time / closed-loop BCI or neurofeedback pipel
 An online pipeline has to be causal, keep up with the data rate, and have
 known timing. Build it in the order below and measure timing before
 collecting real data.
+
+## 0. Load the tool reference
+
+| Task | Reference |
+|---|---|
+| LSL streams, clocks, LabRecorder/XDF, replaying recordings with MNE-LSL | `references/lsl.md` |
+| BrainFlow boards, buffers, causal filtering, packet loss | `references/brainflow.md` |
+| PsychoPy or Psychtoolbox stimuli, frame timing, markers and TTL triggers | `references/stimulus.md` |
+| Choosing and using BCI2000, OpenViBE, Timeflux, BciPy, MEDUSA, BRAND | `references/frameworks.md` |
+
+Check any live stream with `scripts/lsl_stream_check.py` (true rate, gaps,
+lost samples, clock offset, sample age) before recording real data.
 
 ## 1. Acquisition
 
