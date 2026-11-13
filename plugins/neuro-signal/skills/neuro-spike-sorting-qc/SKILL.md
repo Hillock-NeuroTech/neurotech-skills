@@ -1,13 +1,25 @@
 ---
 name: neuro-spike-sorting-qc
-description: Quality control and curation of spike-sorted units from extracellular recordings (Neuropixels, tetrodes, Utah arrays; Kilosort, MountainSort, SpykingCircus, SpikeInterface, Phy, Bombcell). Use whenever the user sorts spikes, curates clusters, decides which units are single units, computes ISI violations or other unit metrics, or deals with drift.
+description: Run spike sorting and quality control of sorted units from extracellular recordings (Neuropixels with SpikeGLX or Open Ephys, tetrodes, Utah arrays, MEAs; Kilosort 4, MountainSort, SpykingCircus2, SpikeInterface, Phy, Bombcell, UnitRefine, UnitMatch, CatGT, TPrime). Use whenever the user sorts spikes, sets sorter parameters, preprocesses for sorting, curates clusters, decides which units are single units, computes ISI violations or other unit metrics, deals with drift, syncs probe data with behaviour, or tracks units across days.
 ---
 
-# Spike-sorting quality control
+# Spike sorting and quality control
 
 Sorter output is a list of candidate clusters, not neurons. Decide which
 are well isolated single units with explicit metrics, applied the same way
 to every session, and report the thresholds.
+
+## 0. Load the tool reference
+
+| Task | Reference |
+|---|---|
+| Read, preprocess, sort, analyse, compare with ground truth in SpikeInterface | `references/spikeinterface.md` |
+| Kilosort 4 settings, outputs, checks | `references/kilosort.md` |
+| Metrics, Bombcell, UnitRefine, merges, Phy, UnitMatch | `references/curation.md` |
+| Neuropixels: SpikeGLX, Open Ephys, phase shift, drift, CatGT/TPrime sync, probe localisation | `references/neuropixels.md` |
+
+Each has a recipe checked against the current library, its traps, and
+what to report. Loading other acquisition formats: `neuro-file-formats`.
 
 ## 1. Before sorting
 
