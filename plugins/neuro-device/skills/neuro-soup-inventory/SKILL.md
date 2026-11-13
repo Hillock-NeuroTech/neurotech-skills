@@ -11,6 +11,12 @@ on, the hardware and software it needs, and an evaluation of its
 published known anomalies. Collecting the list by hand is slow and misses
 transitive dependencies; generate it, then add the judgment parts.
 
+## 0. Load the tool reference
+
+Read `references/sbom-and-vulnerabilities.md`. After generating the
+inventory, check every item against the OSV vulnerability database with
+`scripts/osv_check.py`, which writes the table for the anomaly review.
+
 ## 1. Generate the list
 
 ```bash

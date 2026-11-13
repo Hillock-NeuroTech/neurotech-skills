@@ -1,6 +1,6 @@
 {
   "name": "neuro-device",
-  "description": "Neural-device engineering workflows: recording front ends, electrode electrochemistry, implant power and thermal budgets, regulatory test mapping and SOUP inventories. Engineering support, not certification.",
+  "description": "Neural-device engineering workflows: recording front ends, electrode electrochemistry, implant power and thermal budgets, regulatory test mapping and SOUP inventories, with references for ADS1299/Intan, potentiostat data and fitting, bioheat modelling, FDA databases (live openFDA lookup) and OSV vulnerability checks. Engineering support, not certification.",
   "version": "0.1.0",
   "author": {
     "name": "Hillock NeuroTech"

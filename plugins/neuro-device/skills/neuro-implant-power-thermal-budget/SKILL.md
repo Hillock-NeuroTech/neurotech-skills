@@ -9,6 +9,12 @@ Channel count drives data rate, data rate drives radio power, and power
 becomes heat in tissue. Budget all three together early, because the
 thermal limit usually decides what is feasible.
 
+## 0. Load the tool reference
+
+Read `references/thermal-and-links.md`: the Pennes bioheat model and the
+tools to solve it, wireless power and data link heating, and bench
+verification in phantoms.
+
 ## 1. Data rate
 
 raw rate = channels x sampling rate x bits per sample. Options that cut

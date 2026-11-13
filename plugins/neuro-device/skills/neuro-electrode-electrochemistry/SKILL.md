@@ -10,6 +10,13 @@ how much charge the interface injects reversibly. Measure both with
 standard methods and report conditions, because values change with
 electrolyte, sweep rate, pulse width and bias.
 
+## 0. Load the tool reference
+
+Read `references/instruments-and-fitting.md`: Gamry, BioLogic, Autolab
+and PalmSens exports, how to fit spectra (`scripts/fit_eis.py` recovered
+known values where impedance.py's default fit did not), CSC and voltage
+transient analysis.
+
 ## 1. Impedance spectroscopy
 
 - Three-electrode cell (working, large counter, Ag/AgCl reference) in

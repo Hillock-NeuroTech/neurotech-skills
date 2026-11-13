@@ -9,6 +9,13 @@ Start from the signal (amplitude and band) and the electrode (impedance
 and offset), budget noise at the input, then choose gain, filters and ADC
 so the amplifier, not the ADC or the electrode, sets the floor.
 
+## 0. Load the tool reference
+
+Read `references/chips-and-tools.md`: ADS1299 and Intan RHD2000
+specifications taken from the current datasheets, ADS1299 register
+configuration, simulation tools (KiCad/ngspice, LTspice, TINA-TI) and
+layout rules for microvolt inputs.
+
 ## 1. Requirements
 
 | Signal | Typical amplitude | Band |

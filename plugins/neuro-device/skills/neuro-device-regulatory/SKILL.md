@@ -9,6 +9,13 @@ Scope: engineering planning support. Classification and submission
 strategy belong to the regulatory lead and, ideally, an FDA Q-Submission
 or notified-body discussion.
 
+## 0. Load the tool reference
+
+Read `references/databases-and-tools.md`: neurotech FDA product codes,
+public databases and requirements tools. Look up any product code live
+with `scripts/fda_lookup.py` (class, 510(k)/De Novo/PMA records, MAUDE
+reports, recalls) through openFDA.
+
 ## 1. Describe the device
 
 Intended use and population, implanted or external, recording and/or
