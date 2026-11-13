@@ -1,9 +1,13 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/brand/banner-dark.png">
-    <img alt="hillock" src="assets/brand/banner-light.png" width="720">
+    <img alt="Hillock: field-standard neurotech workflows for Claude. Logo and a brain drawn as tractography fibres." src="assets/brand/banner-light.png" width="720">
   </picture>
 </p>
+
+<h1 align="center">Neurotech skills for Claude Code</h1>
+
+<p align="center">For BCI decoding, EEG/MEG, spike sorting, real-time rigs, brain stimulation and neural devices.</p>
 
 <p align="center">
   <a href="https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills/actions/workflows/ci.yml"><img alt="tests" src="https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills/actions/workflows/ci.yml/badge.svg"></a>
@@ -25,7 +29,7 @@ instead of researching what to do.
 Each panel is one of the suite's scripts run on synthetic data
 ([brand/make_gallery.py](brand/make_gallery.py) regenerates it).
 
-## Install
+## Install the Claude Code plugin
 
 In Claude Code:
 
@@ -47,7 +51,7 @@ Then add the bundles you work with:
 Skills load automatically when a request matches. Start with
 `neuro-router`: it maps any neurotech request to the right workflow.
 
-## The bundles
+## Skill bundles
 
 | Bundle | Skills | Agent |
 |---|---|---|
@@ -60,7 +64,7 @@ Skills load automatically when a request matches. Start with
 
 What each skill does: [ROADMAP.md](ROADMAP.md).
 
-## Built-in tools
+## Built-in Python scripts
 
 Seventeen tested scripts do the standard calculations so Claude does not
 rewrite them each time.
@@ -90,7 +94,7 @@ rewrite them each time.
 
 </details>
 
-## Tool references
+## Tool references: MNE, SpikeInterface, LSL, SimNIBS, k-Wave and more
 
 Skills carry reference files with working recipes for the software the
 field uses, each listing that tool's traps and what to report. Recipes
@@ -118,7 +122,7 @@ for Python libraries are checked against the current release.
 
 </details>
 
-## Quality
+## Quality and benchmark
 
 Every skill follows published practice and cites its sources. Every
 script is tested against cases with known answers. The repo also ships a
@@ -131,7 +135,7 @@ or without Hillock.
 Stimulation and device workflows are research and engineering support,
 not clinical decisions, regulatory sign-off or certification.
 
-## Contribute
+## Contribute and review
 
 Practitioners make these workflows better: corrections, missing steps,
 new datasets and devices, and reviews. See [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hillock: neurotech skills for Claude Code (BCI, EEG/MEG, spike sorting, brain stimulation)</title>
+<meta name="description" content="32 Claude Code skills and 6 agents for neural engineering: leak-free BCI decoding evaluation, EEG/MEG preprocessing, spike sorting QC, real-time LSL pipelines, TMS, tDCS, DBS and ultrasound stimulation, and neural device design. Free and open source (MIT).">
+<link rel="canonical" href="https://hillock-neurotech.github.io/ultimate-neurotech-claude-skills/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hillock Labs">
+<meta property="og:title" content="Hillock: neurotech skills for Claude Code">
+<meta property="og:description" content="Field-standard neurotech workflows for Claude: BCI decoding, EEG/MEG, spike sorting, real-time rigs, brain stimulation and neural devices.">
+<meta property="og:url" content="https://hillock-neurotech.github.io/ultimate-neurotech-claude-skills/">
+<meta property="og:image" content="https://hillock-neurotech.github.io/ultimate-neurotech-claude-skills/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hillock-neurotech.github.io/ultimate-neurotech-claude-skills/social-preview.png">
+<link rel="icon" href="avatar.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "Hillock",
+  "alternateName": "Ultimate Neurotech Claude Skills",
+  "description": "Claude Code skills, agents and tested scripts for neural engineering: BCI decoding evaluation, EEG/MEG preprocessing, spike sorting, real-time pipelines, brain stimulation and neural devices.",
+  "codeRepository": "https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills",
+  "programmingLanguage": "Python",
+  "license": "https://opensource.org/licenses/MIT",
+  "version": "0.2.0",
+  "author": {"@type": "Organization", "name": "Hillock Labs", "url": "https://github.com/Hillock-NeuroTech"},
+  "keywords": "Claude Code, Claude skills, neurotechnology, brain-computer interface, BCI, EEG, MEG, spike sorting, neuromodulation, deep brain stimulation, transcranial ultrasound, Lab Streaming Layer, MNE-Python"
+}
+</script>
+<style>
+@font-face { font-family: "Marcellus SC"; src: url("fonts/MarcellusSC-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Gloock"; src: url("fonts/Gloock-Regular.ttf") format("truetype"); font-display: swap; }
+:root { --bg: #0b0810; --ink: #ece6df; --sub: #b9b2c2; --muted: #8a8394; --line: #241f2b; --orange: #ff7a45; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.65 Georgia, "Iowan Old Style", serif; }
+main { max-width: 860px; margin: 0 auto; padding: 32px 24px 80px; }
+.banner { width: 100%; height: auto; display: block; }
+h1 { font-family: "Marcellus SC", serif; font-weight: 400; letter-spacing: .12em; font-size: 30px; margin: 28px 0 6px; }
+h2 { font-family: "Gloock", serif; font-weight: 400; font-size: 26px; margin: 56px 0 12px; }
+h3 { font-family: "Marcellus SC", serif; font-weight: 400; letter-spacing: .08em; font-size: 18px; margin: 28px 0 4px; color: var(--sub); }
+p.lede { color: var(--sub); font-size: 19px; }
+a { color: var(--ink); text-decoration-color: var(--orange); text-underline-offset: 3px; }
+pre { background: #15111b; border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; overflow-x: auto; font: 14px/1.6 ui-monospace, Menlo, monospace; color: var(--ink); }
+figure { margin: 18px 0; }
+figure img { width: 100%; border-radius: 8px; background: #fff; }
+figcaption { color: var(--muted); font-size: 15px; margin-top: 8px; font-style: italic; }
+ul { padding-left: 20px; }
+li { margin: 3px 0; }
+code { font: 14px ui-monospace, Menlo, monospace; color: var(--sub); }
+.note { color: var(--muted); font-size: 15px; border-top: 1px solid var(--line); margin-top: 56px; padding-top: 18px; }
+.cta { display: inline-block; margin-top: 10px; padding: 10px 18px; border: 1px solid var(--orange); border-radius: 6px; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <img class="banner" src="banner-dark.png" alt="Hillock: field-standard neurotech workflows for Claude. Logo and a brain drawn as tractography fibres." width="1800" height="480">
+
+  <h1>Neurotech skills for Claude Code</h1>
+  <p class="lede">32 skills and 6 agents that give Claude the established workflows of neural engineering: BCI decoding, EEG/MEG and spike analysis, real-time rigs, brain stimulation and neural devices. Free and open source under the MIT licence.</p>
+  <a class="cta" href="https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills">View on GitHub</a>
+
+  <h2>Install the Claude Code plugin</h2>
+  <pre>/plugin marketplace add Hillock-NeuroTech/ultimate-neurotech-claude-skills
+/plugin install neuro-router@hillock</pre>
+  <p>Then add the bundles you work with, for example <code>/plugin install neuro-decoding@hillock</code>. Skills load automatically when a request matches.</p>
+
+  <h2>What it catches</h2>
+  <figure>
+    <img src="gallery.png" alt="Four panels: a decoder that scores 0.94 split by trial and 0.57 split by session; a Medtronic Percept stream rebuilt with lost packets as gaps; two ultrasound protocols with the same mechanical index and ten times different Ispta; an EEG spectrum with mains harmonics and one muscle channel." width="1540" height="946" loading="lazy">
+    <figcaption>Each panel is one of the suite's scripts run on synthetic data.</figcaption>
+  </figure>
+  <p>The same decoder scores 0.94 when EEG trials are split at random and 0.57, below chance, when whole recording sessions are held out. With Hillock loaded, Claude evaluates decoders with session- and subject-wise splits, true chance levels and permutation tests by default.</p>
+
+  <h2>Skill bundles</h2>
+  <h3>neuro-router</h3>
+  <p>Entry point that maps any neurotech request to the right workflow; reading every neural file format (EDF, BrainVision, XDF, NWB, Neuralynx, Blackrock, Intan, Open Ephys, SpikeGLX and more); finding public EEG, MEG, iEEG and spike datasets.</p>
+  <h3>neuro-decoding</h3>
+  <ul>
+    <li>Leak-free BCI and neural decoding evaluation</li>
+    <li>Intracortical BCI decoder stability across days</li>
+    <li>Known quirks of public BCI datasets</li>
+    <li>Seizure detection and sleep staging evaluation</li>
+    <li>Comparing EEG foundation models fairly</li>
+  </ul>
+  <h3>neuro-signal</h3>
+  <ul>
+    <li>EEG/MEG preprocessing review (MNE-Python, EEGLAB, FieldTrip, Brainstorm)</li>
+    <li>Spike sorting quality control (SpikeInterface, Kilosort 4, Neuropixels)</li>
+    <li>Diagnosing line noise, muscle and drift</li>
+    <li>Channel map verification</li>
+    <li>Connectivity claims and cluster-based permutation statistics</li>
+  </ul>
+  <h3>neuro-realtime</h3>
+  <ul>
+    <li>Real-time BCI pipelines (Lab Streaming Layer, BrainFlow, MNE-LSL)</li>
+    <li>Clock synchronisation between devices</li>
+    <li>Stimulus timing audits (PsychoPy, Psychtoolbox, photodiodes)</li>
+    <li>Phase-locked stimulation and stimulation artifact recovery</li>
+    <li>Porting decoders and filters to fixed-point firmware</li>
+  </ul>
+  <h3>neuro-stim</h3>
+  <ul>
+    <li>Electrical stimulation safety: charge density, Shannon k, electrode limits</li>
+    <li>TMS and tDCS field modelling (SimNIBS, ROAST)</li>
+    <li>Deep brain stimulation sensing data (Medtronic Percept, Lead-DBS)</li>
+    <li>Transcranial focused ultrasound dose planning (k-Wave, BabelBrain, ITRUSST)</li>
+    <li>Peripheral nerve stimulation models (NEURON, ASCENT)</li>
+    <li>Sham and blinding design</li>
+  </ul>
+  <h3>neuro-device</h3>
+  <ul>
+    <li>Biopotential front-end design (ADS1299, Intan RHD2000)</li>
+    <li>Electrode electrochemistry: impedance spectroscopy, CSC, voltage transients</li>
+    <li>Implant power and thermal budgets</li>
+    <li>FDA regulatory pathways and databases</li>
+    <li>IEC 62304 software inventory and vulnerability checks</li>
+  </ul>
+
+  <h2>Tested scripts and a benchmark</h2>
+  <p>17 Python scripts do the standard calculations, each tested against cases with known answers: leak-free decoder evaluation, clock alignment, LSL stream checks, stimulation charge and density, ultrasound safety indices, Percept stream rebuilds, noise budgets, impedance fitting, FDA and vulnerability lookups. A 46-task benchmark, graded by code, checks any AI assistant on the mistakes these workflows prevent.</p>
+
+  <p class="note">Stimulation and device workflows are research and engineering support, not clinical decisions, regulatory sign-off or certification. Built by <a href="https://github.com/Hillock-NeuroTech">Hillock Labs</a>. Corrections and reviews from practitioners are welcome on <a href="https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills/issues/new/choose">GitHub</a>.</p>
+</main>
+</body>
+</html>
