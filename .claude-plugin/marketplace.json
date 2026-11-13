@@ -26,7 +26,7 @@
     {
       "name": "neuro-realtime",
       "source": "./plugins/neuro-realtime",
-      "description": "Real-time and closed-loop BCI workflows: streaming pipelines, clock sync forensics, stimulus timing, phase-locked stimulation, artifact recovery and decoder-to-firmware ports."
+      "description": "Real-time and closed-loop BCI workflows: streaming pipelines, clock sync forensics, stimulus timing, phase-locked stimulation, artifact recovery and decoder-to-firmware ports, with tool references for LSL, BrainFlow, MNE-LSL, PsychoPy, Psychtoolbox, BCI2000 and OpenViBE."
     },
     {
       "name": "neuro-stim",

@@ -44,12 +44,13 @@ What each skill does: [ROADMAP.md](ROADMAP.md).
 
 ## Built-in tools
 
-Twelve tested scripts do the standard calculations so Claude does not
+Thirteen tested scripts do the standard calculations so Claude does not
 rewrite them each time:
 
 | Script | Skill | Does |
 |---|---|---|
 | `inspect_recording.py` | neuro-file-formats | rate, channel types, unit errors, flat and clipped channels, events, montage, line frequency |
+| `lsl_stream_check.py` | neuro-realtime-bci-pipeline | true sampling rate, gaps, lost samples, clock offset of a live LSL stream |
 | `leakage_safe_eval.py` | neuro-bci-decoding-eval | grouped CV, chance level, group-aware permutation test |
 | `event_scoring.py` | neuro-seizure-detection-eval | event sensitivity, false alarms per hour, latency |
 | `spectrum_report.py` | neuro-noise-detective | line noise, harmonics, muscle, drift, flat and clipped channels |
@@ -74,6 +75,7 @@ for Python libraries are checked against the current release.
 | neuro-data-sources | archives, MOABB and MNE loaders, standard datasets by question |
 | neuro-eeg-preprocessing-review | MNE-Python, EEGLAB, FieldTrip, Brainstorm, and a table of equivalent steps |
 | neuro-spike-sorting-qc | SpikeInterface, Kilosort 4, curation (Bombcell, UnitRefine, Phy, UnitMatch), Neuropixels acquisition and sync |
+| neuro-realtime-bci-pipeline | LSL and LabRecorder/XDF, MNE-LSL replay, BrainFlow, PsychoPy and Psychtoolbox timing and triggers, BCI2000, OpenViBE and other frameworks |
 
 ## Quality
 

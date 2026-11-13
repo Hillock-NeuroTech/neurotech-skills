@@ -42,7 +42,7 @@ research the method first. If several apply, run them in the order given.
 
 | Request | Skill |
 |---|---|
-| online BCI, LSL, BrainFlow, neurofeedback, latency | neuro-realtime-bci-pipeline |
+| online BCI, LSL, BrainFlow, OpenBCI/Muse boards, neurofeedback, PsychoPy/Psychtoolbox markers, BCI2000/OpenViBE, stream rate or dropped samples, latency | neuro-realtime-bci-pipeline |
 | align clocks, sync pulses, wrong sampling rate | neuro-sync-forensics |
 | stimulus timing, photodiode, frame drops | neuro-stimulus-timing-audit |
 | phase-locked or burst-triggered stimulation | neuro-phase-locked-stim-eval |
