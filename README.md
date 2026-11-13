@@ -18,9 +18,12 @@ rigs, neuromodulation and neural devices. With Hillock loaded, Claude
 goes straight to the right method, defaults and checks for the task
 instead of researching what to do.
 
-<p align="center">
-  <img alt="leakage_safe_eval.py run twice on the same recording: 0.94 when split by trial, 0.57 when split by session" src="assets/demo.gif" width="760">
-</p>
+## What it catches
+
+![Four panels: a decoder that scores 0.94 split by trial and 0.57 split by session; a Percept stream rebuilt with lost packets as gaps; two ultrasound protocols with the same MI and ten times different Ispta; an EEG spectrum with mains harmonics and one muscle channel](assets/gallery.png)
+
+Each panel is one of the suite's scripts run on synthetic data
+([brand/make_gallery.py](brand/make_gallery.py) regenerates it).
 
 ## Install
 
@@ -56,13 +59,6 @@ Skills load automatically when a request matches. Start with
 | **neuro-device** | `neuro-frontend-design`, `neuro-electrode-electrochemistry`, `neuro-implant-power-thermal-budget`, `neuro-device-regulatory`, `neuro-soup-inventory` | `neuro-device-engineer` |
 
 What each skill does: [ROADMAP.md](ROADMAP.md).
-
-## What it catches
-
-![Four panels: a decoder that scores 0.94 split by trial and 0.57 split by session; a Percept stream rebuilt with lost packets as gaps; two ultrasound protocols with the same MI and ten times different Ispta; an EEG spectrum with mains harmonics and one muscle channel](assets/gallery.png)
-
-Each panel is one of the suite's scripts run on synthetic data
-([brand/make_gallery.py](brand/make_gallery.py) regenerates it).
 
 ## Built-in tools
 
