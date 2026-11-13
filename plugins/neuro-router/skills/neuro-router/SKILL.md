@@ -5,9 +5,16 @@ description: Entry point for any neurotechnology, neural engineering, BCI, EEG/M
 
 # Hillock router
 
-Pick the workflow, load it, follow it. Each skill already contains the
+Pick the workflow, load it, follow it. Start with `neuro-file-formats` whenever data has to be loaded first. Each skill already contains the
 field's standard procedure, defaults and checks, so there is no need to
 research the method first. If several apply, run them in the order given.
+
+## Foundations (neuro-router; installed with the router)
+
+| Request | Skill |
+|---|---|
+| open, load, convert or export any recording file; wrong units, rate or events after loading | neuro-file-formats |
+| find a dataset or benchmark, where data lives, how to download it | neuro-data-sources |
 
 ## Decoding and evaluation (neuro-decoding)
 

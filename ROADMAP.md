@@ -1,4 +1,4 @@
-# Skills: 30 workflows in five bundles plus a router
+# Skills: 32 workflows in five bundles plus a router
 
 Suite: **Hillock**. Repo: `Hillock-NeuroTech/neurotech-skills`. Marketplace name: `hillock`.
 
@@ -26,6 +26,8 @@ Status values: `draft` (written from published practice, scripts tested)
 | # | Bundle | Skill | What it does | Origin | Status |
 |---|---|---|---|---|---|
 | 1 | neuro-router | neuro-router | Thin index; hands NWB and BIDS work to CatalystNeuro and K-Dense | brief | draft |
+| 1a | neuro-router | neuro-file-formats | Reader per system, companion files, units and event checks, conversion traps; inspection script | v0.2 | draft |
+| 1b | neuro-router | neuro-data-sources | Archives, MOABB and MNE loaders, datasets by question, access and licence | v0.2 | draft |
 | 2 | neuro-decoding | neuro-bci-decoding-eval | Leak-free splits, real chance levels, permutation tests | brief | draft |
 | 3 | neuro-decoding | neuro-ibci-decoder-stability | Cross-day evaluation in the FALCON style | brief | draft |
 | 4 | neuro-decoding | neuro-dataset-gotchas | Known quirks of each public dataset, applied before training | proposed | draft |

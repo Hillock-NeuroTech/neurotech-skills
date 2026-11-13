@@ -1,6 +1,6 @@
 {
   "name": "neuro-router",
-  "description": "Start here. Routes any neurotech or BCI request to the right Hillock skill and hands NWB/BIDS data-standard work to existing community skills.",
+  "description": "Start here. Routes any neurotech or BCI request to the right Hillock skill, plus two foundation skills: reading every neural file format and finding public datasets.",
   "version": "0.1.0",
   "author": {
     "name": "Hillock NeuroTech"

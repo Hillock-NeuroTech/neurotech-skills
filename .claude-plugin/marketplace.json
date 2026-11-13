@@ -4,14 +4,14 @@
     "name": "Hillock NeuroTech"
   },
   "metadata": {
-    "description": "The neurotech workflow suite for Claude: 30 skills in 5 bundles plus a router.",
+    "description": "The neurotech workflow suite for Claude: 32 skills in 5 bundles plus a router.",
     "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "neuro-router",
       "source": "./plugins/neuro-router",
-      "description": "Start here. Routes any neurotech or BCI request to the right Hillock skill and hands NWB/BIDS data-standard work to existing community skills."
+      "description": "Start here. Routes any neurotech or BCI request to the right Hillock skill, plus two foundation skills: reading every neural file format and finding public datasets."
     },
     {
       "name": "neuro-decoding",
@@ -21,7 +21,7 @@
     {
       "name": "neuro-signal",
       "source": "./plugins/neuro-signal",
-      "description": "Signal-analysis review workflows: EEG/MEG preprocessing, spike-sorting QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics."
+      "description": "Signal-analysis review workflows: EEG/MEG preprocessing, spike-sorting QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics. EEG/MEG preprocessing includes working recipes for MNE-Python, EEGLAB, FieldTrip and Brainstorm."
     },
     {
       "name": "neuro-realtime",

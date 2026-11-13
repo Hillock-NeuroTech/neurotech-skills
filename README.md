@@ -1,6 +1,6 @@
 # Hillock: the neurotech workflow suite for Claude
 
-30 skills and 6 agents that give Claude the established workflows of
+32 skills and 6 agents that give Claude the established workflows of
 neural engineering: BCI decoding, EEG/MEG and spike analysis, real-time
 rigs, neuromodulation and neural devices. With Hillock loaded, Claude
 goes straight to the right method, defaults and checks for the task
@@ -33,7 +33,7 @@ Skills load automatically when a request matches. Start with
 
 | Bundle | Skills | Agent |
 |---|---|---|
-| **neuro-router** | `neuro-router`: entry point and map of every workflow | `neuro-lead` coordinates multi-bundle projects |
+| **neuro-router** | `neuro-router`: entry point and map of every workflow; `neuro-file-formats`: open and verify any recording file; `neuro-data-sources`: find public datasets and benchmarks | `neuro-lead` coordinates multi-bundle projects |
 | **neuro-decoding** | `neuro-bci-decoding-eval`, `neuro-ibci-decoder-stability`, `neuro-dataset-gotchas`, `neuro-seizure-detection-eval`, `neuro-sleep-staging-eval`, `neuro-foundation-model-eval` | `neuro-decoding-reviewer` |
 | **neuro-signal** | `neuro-eeg-preprocessing-review`, `neuro-spike-sorting-qc`, `neuro-noise-detective`, `neuro-channel-map-verifier`, `neuro-connectivity-claims-check`, `neuro-cluster-stats-interpreter` | `neuro-signal-reviewer` |
 | **neuro-realtime** | `neuro-realtime-bci-pipeline`, `neuro-sync-forensics`, `neuro-stimulus-timing-audit`, `neuro-phase-locked-stim-eval`, `neuro-stim-artifact-recovery`, `neuro-decoder-to-firmware` | `neuro-rig-engineer` |
@@ -44,11 +44,12 @@ What each skill does: [ROADMAP.md](ROADMAP.md).
 
 ## Built-in tools
 
-Eleven tested scripts do the standard calculations so Claude does not
+Twelve tested scripts do the standard calculations so Claude does not
 rewrite them each time:
 
 | Script | Skill | Does |
 |---|---|---|
+| `inspect_recording.py` | neuro-file-formats | rate, channel types, unit errors, flat and clipped channels, events, montage, line frequency |
 | `leakage_safe_eval.py` | neuro-bci-decoding-eval | grouped CV, chance level, group-aware permutation test |
 | `event_scoring.py` | neuro-seizure-detection-eval | event sensitivity, false alarms per hour, latency |
 | `spectrum_report.py` | neuro-noise-detective | line noise, harmonics, muscle, drift, flat and clipped channels |
