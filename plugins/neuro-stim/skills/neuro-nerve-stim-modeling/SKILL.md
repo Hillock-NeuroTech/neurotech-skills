@@ -9,6 +9,13 @@ Which fibers fire depends on geometry (nerve, fascicles, electrode), tissue
 conductivities, fiber diameter and type, and the waveform. Model the field
 and the axons together, then check the model against measured recruitment.
 
+## 0. Load the tool reference
+
+Read `references/neuron-and-ascent.md`: how to apply a field to an axon in
+NEURON (run and checked), the MRG model, the ASCENT pipeline, and the
+model traps (the built-in squid `hh` model at 6.3 °C gives unrealistic
+mammalian thresholds).
+
 ## 1. Geometry and field
 
 - Nerve cross-section from histology (fascicle outlines, perineurium,

@@ -10,6 +10,12 @@ skull, so free-water transducer specifications do not describe the dose
 in the brain. Simulate per participant, check mechanical and thermal
 indices, and report every parameter.
 
+## 0. Load the tool reference
+
+Read `references/simulation-and-safety.md`: k-Wave / k-wave-python,
+k-Plan, BabelBrain and Kranion, and the ITRUSST levels. Compute MI,
+Isppa, Ispta and thermal dose with `scripts/tus_indices.py`.
+
 ## 1. Parameters to define
 
 Transducer (model, elements, focal distance, aperture), fundamental
@@ -31,11 +37,14 @@ time, and target with coordinates.
 
 ## 3. Check against safety guidance
 
-Compare with the current ITRUSST consensus on biophysical safety for TUS
-and with diagnostic-ultrasound reference levels that are often used as
-anchors (FDA: Ispta.3 up to 720 mW/cm^2, MI up to 1.9). Thermal limits are
-usually set as a maximum temperature rise or thermal dose; use the limits
-in the current consensus and your approved protocol. If simulation
+Compare with the ITRUSST consensus (Aubry et al. 2025, Brain Stimulation
+18(6):1896-1905): non-significant risk if MI (or MItc) is at most 1.9, and
+for heating if any one of these holds: peak rise at most 2 °C (or peak at
+most 39 °C from 37 °C); thermal dose at most 2 CEM43 in brain, 16 in bone,
+21 in skin; or thermal index within the tabulated values for the exposure
+time. These are levels, not limits; your approved protocol governs. The
+FDA diagnostic reference (Ispta.3 up to 720 mW/cm^2, MI up to 1.9) is
+often quoted alongside but was set for imaging. If simulation
 uncertainty is large, plan with margin.
 
 ## 4. Control for auditory and somatosensory confounds

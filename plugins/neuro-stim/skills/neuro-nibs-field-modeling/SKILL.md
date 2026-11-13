@@ -9,6 +9,13 @@ The dose that matters is the electric field in the target, which depends
 on anatomy, montage or coil placement, and intensity. Model it per person
 when you can, and report the full dose so others can reproduce it.
 
+## 0. Load the tool reference
+
+Read `references/simnibs.md` before setting up a model: SimNIBS 4.6
+recipes for TMS, tDCS and temporal interference taken from its own
+examples, optimisation classes, neuronavigation import, ROAST usage, and
+the unit trap between them (SimNIBS amperes, ROAST milliamperes).
+
 ## 1. Build the head model
 
 - SimNIBS: `charm subID T1.nii.gz T2.nii.gz` (T2 improves skull and CSF).

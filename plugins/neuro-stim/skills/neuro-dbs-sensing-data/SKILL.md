@@ -10,6 +10,13 @@ their own timestamps, packets go missing, several clocks are involved, and
 ECG and stimulation leak into the LFP. Rebuild a clean, gap-aware time
 series before any spectral analysis.
 
+## 0. Load the tool reference
+
+Read `references/percept-and-dbs-tools.md`: every Percept export section
+and its timing fields, the perceive toolbox, Lead-DBS and OSS-DBS. Rebuild
+Percept streams with `scripts/percept_timedomain.py`, which keeps lost
+packets as NaN gaps.
+
 ## 1. Load with an established reader
 
 - Medtronic Percept: the JSON session export has separate sections for
