@@ -1,0 +1,11 @@
+{
+  "upload_type": "software",
+  "title": "Hillock: neurotech skills for Claude Code",
+  "description": "<p>32 Claude Code skills and 6 agents that give Claude the established workflows of neural engineering: leak-free BCI decoding evaluation, EEG/MEG preprocessing, spike sorting QC, noise diagnosis, real-time LSL pipelines and timing, TMS, tDCS, DBS and ultrasound stimulation, and neural device design, safety and FDA regulation. Includes 17 tested Python scripts and a 46-task benchmark of the mistakes these workflows prevent, graded by code.</p><p>Stimulation and device workflows are research and engineering support, not clinical decisions, regulatory sign-off or certification.</p>",
+  "creators": [{"name": "Hillock Labs"}],
+  "license": "MIT",
+  "keywords": ["Claude Code", "Claude skills", "neurotechnology", "brain-computer interface", "BCI", "EEG", "MEG", "spike sorting", "neuromodulation", "deep brain stimulation", "transcranial ultrasound", "Lab Streaming Layer", "MNE-Python", "benchmark", "data leakage"],
+  "related_identifiers": [
+    {"identifier": "https://hillock-neurotech.github.io/ultimate-neurotech-claude-skills/", "relation": "isDocumentedBy", "resource_type": "other"}
+  ]
+}

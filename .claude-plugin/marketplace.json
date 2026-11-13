@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "The neurotech workflow suite for Claude: 32 skills in 5 bundles plus a router.",
-    "version": "0.2.0"
+    "version": "0.2.1"
   },
   "plugins": [
     {

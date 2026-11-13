@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1 (2026-11-13)
+
+- Project website with search metadata and sitemap; README title and
+  clearer section headings; repo topics.
+- Issue templates for improving a skill and reviewing a bundle.
+- Archive metadata (`.zenodo.json`) and an updated citation file.
+
 ## 0.2.0 (2026-11-13)
 
 - Repository renamed to `Hillock-NeuroTech/ultimate-neurotech-claude-skills`; install with

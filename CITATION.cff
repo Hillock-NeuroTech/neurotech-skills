@@ -1,10 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this benchmark, please cite it as below."
-title: "Hillock: a correctness benchmark for AI assistants in neural engineering"
+message: "If you use these skills or the benchmark, please cite them as below."
+title: "Hillock: neurotech skills for Claude Code"
+abstract: "Claude Code skills, agents and tested scripts for neural engineering (BCI decoding evaluation, EEG/MEG, spike sorting, real-time pipelines, brain stimulation and neural devices), with a 46-task correctness benchmark."
 authors:
   - name: "Hillock Labs"
-version: 0.2.0
+version: 0.2.1
 date-released: 2026-11-13
 repository-code: "https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills"
+url: "https://hillock-neurotech.github.io/ultimate-neurotech-claude-skills/"
 license: MIT
-keywords: [neurotech, bci, eeg, neural-engineering, benchmark, ai-assistants, data-leakage]
+keywords: [neurotech, bci, eeg, meg, spike-sorting, neuromodulation, neural-engineering, claude-code, benchmark, data-leakage]
