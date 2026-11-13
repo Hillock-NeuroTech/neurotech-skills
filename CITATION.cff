@@ -5,6 +5,6 @@ authors:
   - name: "Hillock Labs"
 version: 0.2.0
 date-released: 2026-11-13
-repository-code: "https://github.com/Hillock-NeuroTech/hillock"
+repository-code: "https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills"
 license: MIT
 keywords: [neurotech, bci, eeg, neural-engineering, benchmark, ai-assistants, data-leakage]

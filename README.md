@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Hillock-NeuroTech/hillock/actions/workflows/ci.yml"><img alt="tests" src="https://github.com/Hillock-NeuroTech/hillock/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills/actions/workflows/ci.yml"><img alt="tests" src="https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills/actions/workflows/ci.yml/badge.svg"></a>
   <img alt="32 skills" src="https://img.shields.io/badge/skills-32-ff6a3d">
   <img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-101418">
   <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/licence-MIT-2f6fdf"></a>
@@ -30,7 +30,7 @@ Each panel is one of the suite's scripts run on synthetic data
 In Claude Code:
 
 ```
-/plugin marketplace add Hillock-NeuroTech/hillock
+/plugin marketplace add Hillock-NeuroTech/ultimate-neurotech-claude-skills
 /plugin install neuro-router@hillock
 ```
 

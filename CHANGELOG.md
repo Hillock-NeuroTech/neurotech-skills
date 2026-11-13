@@ -2,8 +2,8 @@
 
 ## 0.2.0 (2026-11-13)
 
-- Repository renamed to `Hillock-NeuroTech/hillock`; install with
-  `/plugin marketplace add Hillock-NeuroTech/hillock`. Old links redirect.
+- Repository renamed to `Hillock-NeuroTech/ultimate-neurotech-claude-skills`; install with
+  `/plugin marketplace add Hillock-NeuroTech/ultimate-neurotech-claude-skills`. Old links redirect.
 - Two foundation skills in the router bundle: `neuro-file-formats` and
   `neuro-data-sources`.
 - Tool references for EEG/MEG (MNE, EEGLAB, FieldTrip, Brainstorm), spike
