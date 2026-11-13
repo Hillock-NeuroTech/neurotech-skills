@@ -4,6 +4,7 @@ title: "Hillock: neurotech skills for Claude Code"
 abstract: "Claude Code skills, agents and tested scripts for neural engineering (BCI decoding evaluation, EEG/MEG, spike sorting, real-time pipelines, brain stimulation and neural devices), with a 46-task correctness benchmark."
 authors:
   - name: "Hillock Labs"
+doi: 10.5281/zenodo.24208610
 version: 0.2.2
 date-released: 2026-11-13
 repository-code: "https://github.com/Hillock-NeuroTech/ultimate-neurotech-claude-skills"

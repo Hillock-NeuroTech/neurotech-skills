@@ -14,6 +14,7 @@
   <img alt="32 skills" src="https://img.shields.io/badge/skills-32-ff6a3d">
   <img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude%20Code-plugin-101418">
   <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/licence-MIT-2f6fdf"></a>
+  <a href="https://doi.org/10.5281/zenodo.24208610"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.24208610.svg"></a>
 </p>
 
 32 skills and 6 agents that give Claude the established workflows of
