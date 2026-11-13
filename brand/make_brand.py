@@ -5,7 +5,9 @@
 
 Avatar: a sagittal brain drawn as fibres, fanning from the brainstem to the
 cortex the way tractography shows them, with one fibre firing in orange.
-Logo: fibres gathering through the hillock into one axon, which fires.
+Logo: fibres gathering through the hillock into one axon, which fires,
+beside HILLOCK in Marcellus SC; the tagline is set in Gloock. Both fonts are
+in brand/fonts under the SIL Open Font License.
 Writes PNG (and SVG for the logo) to assets/brand/. Seeds are fixed, so the
 output is the same on every run.
 """
@@ -29,10 +31,10 @@ INK_DARK, INK_LIGHT = "#ece6df", "#1a1420"
 MUTED_DARK, MUTED_LIGHT = "#8a8394", "#6b6470"
 WARM = LinearSegmentedColormap.from_list("warm", ["#f6cfa8", "#ee9fb4", "#c79be8", "#9fb3f0"])
 WARM_ON_PAPER = LinearSegmentedColormap.from_list("warm_p", ["#d9824f", "#cf5f86", "#8f5fc4", "#5f74c9"])
-MONO_FONTS = ["/System/Library/Fonts/SFNSMono.ttf", "/System/Library/Fonts/Menlo.ttc",
-              "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"]
-MONO = FontProperties(fname=next((f for f in MONO_FONTS if os.path.exists(f)), None)) \
-    if any(os.path.exists(f) for f in MONO_FONTS) else FontProperties(family="monospace")
+FONTS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
+WORDMARK = FontProperties(fname=os.path.join(FONTS, "MarcellusSC-Regular.ttf"))   # SIL OFL, see fonts/
+SERIF = FontProperties(fname=os.path.join(FONTS, "Gloock-Regular.ttf"))            # SIL OFL, see fonts/
+TAGLINE = "Field-standard neurotech workflows for Claude"
 
 # sagittal outline, facing left: frontal pole, over the top, occipital pole, temporal lobe underneath
 OUTLINE = np.array([(-1.25, 0.02), (-1.17, 0.42), (-0.86, 0.78), (-0.35, 0.98), (0.2, 0.99), (0.7, 0.83),
@@ -182,8 +184,24 @@ def draw_mark(ax, x, y, s, ink, lw=1.1, n=9):
     return x + 2.05 * s
 
 
-def wordmark(ax, x, y, size, ink):
-    ax.text(x, y, "hillock", fontproperties=MONO, fontsize=size, color=ink, va="center", ha="left")
+def wordmark(ax, x, y, cap_h, ink, track=0.55, text="HILLOCK"):
+    """Letter-spaced capitals drawn as outlines; cap_h in data units, centred on y. Returns the right edge."""
+    from matplotlib.patches import PathPatch
+    from matplotlib.textpath import TextPath
+    from matplotlib.transforms import Affine2D
+    ref = TextPath((0, 0), "H", size=1, prop=WORDMARK).get_extents()
+    k = cap_h / ref.height
+    cx = x
+    for ch in text:
+        if ch == " ":
+            cx += 0.7 * cap_h
+            continue
+        p = TextPath((0, 0), ch, size=1, prop=WORDMARK)
+        e = p.get_extents()
+        tr = Affine2D().translate(-e.x0, 0).scale(k).translate(cx, y - cap_h / 2)
+        ax.add_patch(PathPatch(tr.transform_path(p), color=ink, lw=0))
+        cx += e.width * k + track * cap_h
+    return cx - track * cap_h
 
 
 # ---------------------------------------------------------------- files
@@ -210,10 +228,10 @@ def avatar(size=1000):
 
 
 def logo(ink, name):
-    fig, ax = canvas(900, 300, "none")
+    fig, ax = canvas(1100, 300, "none")
+    ax.set_xlim(0, 7.6); ax.set_ylim(-1.1, 1.1); ax.set_aspect("equal")
     end = draw_mark(ax, 0.2, 0, 1.0, ink, lw=2.2)
-    wordmark(ax, end + 0.22, 0.0, 58, ink)
-    ax.set_xlim(0, 6.8); ax.set_ylim(-1.1, 1.1); ax.set_aspect("equal")
+    wordmark(ax, end + 0.35, 0, 0.42, ink)
     save(fig, name, exts=("png", "svg"), transparent=True)
 
 
@@ -224,19 +242,19 @@ def mark_only(ink, name):
     save(fig, name, exts=("png", "svg"), transparent=True)
 
 
-def banner(dark, w=1800, h=480, tagline="field-standard neurotech workflows for claude", name=None):
-    bg, ink, muted, cmap = (NIGHT, INK_DARK, MUTED_DARK, WARM) if dark else (PAPER, INK_LIGHT, MUTED_LIGHT, WARM_ON_PAPER)
+def banner(dark, w=1800, h=480):
+    bg, ink, sub, cmap = (NIGHT, INK_DARK, "#b9b2c2", WARM) if dark else (PAPER, INK_LIGHT, "#5d5662", WARM_ON_PAPER)
     fig = plt.figure(figsize=(w / 100, h / 100), dpi=100, facecolor=bg)
     bx = fig.add_axes([1 - (h * 1.08) / w - 0.03, 0.02, (h * 1.08) / w, 0.96]); bx.axis("off"); bx.set_facecolor("none")
     draw_brain(bx, cmap=cmap, n=900, lw=0.38, alpha=0.5 if dark else 0.42, glow=0.035 if dark else 0.0, fire_lw=1.3)
     bx.set_xlim(-1.35, 1.35); bx.set_ylim(-1.05, 1.12); bx.set_aspect("equal")
     ax = fig.add_axes([0, 0, 1, 1], facecolor="none"); ax.axis("off")
     W, H = w / 100, h / 100
-    ax.set_xlim(0, W); ax.set_ylim(0, H)
-    end = draw_mark(ax, 1.0, H * 0.58, 0.9, ink, lw=1.5)
-    wordmark(ax, end + 0.2, H * 0.58, 56, ink)
-    ax.text(1.02, H * 0.3, tagline, fontproperties=MONO, fontsize=16, color=muted)
-    save(fig, name or ("banner-dark" if dark else "banner-light"))
+    ax.set_xlim(0, W); ax.set_ylim(0, H); ax.set_aspect("equal")
+    end = draw_mark(ax, 1.0, H * 0.6, 0.9, ink, lw=1.5)
+    wordmark(ax, end + 0.3, H * 0.6, 0.42, ink)
+    ax.text(1.02, H * 0.3, TAGLINE, fontproperties=SERIF, fontsize=22, color=sub)
+    save(fig, "banner-dark" if dark else "banner-light")
 
 
 def social():
@@ -246,11 +264,9 @@ def social():
     draw_brain(bx, n=900, lw=0.42, alpha=0.55, glow=0.04, fire_lw=1.4)
     bx.set_xlim(-1.35, 1.35); bx.set_ylim(-1.05, 1.12); bx.set_aspect("equal")
     ax = fig.add_axes([0, 0, 1, 1], facecolor="none"); ax.axis("off"); ax.set_xlim(0, 12.8); ax.set_ylim(0, 6.4)
-    end = draw_mark(ax, 0.8, 3.75, 0.75, INK_DARK, lw=1.5)
-    wordmark(ax, end + 0.18, 3.75, 50, INK_DARK)
-    ax.text(0.82, 2.75, "neurotech workflows for claude", fontproperties=MONO, fontsize=17, color=MUTED_DARK)
-    ax.text(0.82, 2.2, "eeg · bci · spike sorting · real time\nneuromodulation · devices", fontproperties=MONO,
-            fontsize=13, color="#5f5868", va="top", linespacing=1.7)
+    end = draw_mark(ax, 0.8, 3.55, 0.75, INK_DARK, lw=1.5)
+    wordmark(ax, end + 0.25, 3.55, 0.36, INK_DARK)
+    ax.text(0.82, 2.55, TAGLINE, fontproperties=SERIF, fontsize=17, color="#b9b2c2")
     save(fig, "social-preview")
 
 
