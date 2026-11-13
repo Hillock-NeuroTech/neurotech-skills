@@ -1,7 +1,7 @@
 {
   "name": "neuro-decoding",
   "description": "Decoder evaluation workflows for BCI and neural data: leak-free splits, true chance levels, cross-day stability, dataset quirks, seizure and sleep scoring, foundation-model comparisons.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": {
     "name": "Hillock Labs"
   },

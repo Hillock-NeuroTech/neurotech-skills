@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 (2026-11-13)
+
+- First release archived on Zenodo, with a citable DOI.
+
 ## 0.2.1 (2026-11-13)
 
 - Project website with search metadata and sitemap; README title and

@@ -1,7 +1,7 @@
 {
   "name": "neuro-realtime",
   "description": "Real-time and closed-loop BCI workflows: streaming pipelines, clock sync forensics, stimulus timing, phase-locked stimulation, artifact recovery and decoder-to-firmware ports, with tool references for LSL, BrainFlow, MNE-LSL, PsychoPy, Psychtoolbox, BCI2000 and OpenViBE.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": {
     "name": "Hillock Labs"
   },
