@@ -1,12 +1,12 @@
 {
   "name": "neuro-signal",
   "description": "Signal-analysis workflows: EEG/MEG preprocessing, spike sorting and QC, noise diagnosis, channel-map checks, connectivity claims and cluster statistics, with tool references for MNE, EEGLAB, FieldTrip, Brainstorm, SpikeInterface, Kilosort 4 and Neuropixels.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "Hillock NeuroTech"
+    "name": "Hillock Labs"
   },
-  "homepage": "https://github.com/Hillock-NeuroTech/neurotech-skills",
-  "repository": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "homepage": "https://github.com/hillocklabs/hillock",
+  "repository": "https://github.com/hillocklabs/hillock",
   "license": "MIT",
   "keywords": [
     "neurotech",

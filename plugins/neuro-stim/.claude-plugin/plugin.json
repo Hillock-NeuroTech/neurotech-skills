@@ -1,12 +1,12 @@
 {
   "name": "neuro-stim",
   "description": "Neuromodulation research-engineering workflows: stimulation safety limits, TMS/tES field modeling, DBS sensing data, focused-ultrasound dosing, nerve-stimulation models and sham design, with tool references for SimNIBS, ROAST, Percept exports, Lead-DBS, k-Wave, BabelBrain, NEURON and ASCENT. Research support, not clinical decisions.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "Hillock NeuroTech"
+    "name": "Hillock Labs"
   },
-  "homepage": "https://github.com/Hillock-NeuroTech/neurotech-skills",
-  "repository": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "homepage": "https://github.com/hillocklabs/hillock",
+  "repository": "https://github.com/hillocklabs/hillock",
   "license": "MIT",
   "keywords": [
     "neurotech",

@@ -9,7 +9,10 @@ from pathlib import Path
 
 import pytest
 
-pylsl = pytest.importorskip("pylsl")
+try:
+    import pylsl  # noqa: F401  (raises RuntimeError, not ImportError, when liblsl is missing)
+except Exception as e:  # pragma: no cover
+    pytest.skip(f"pylsl unavailable: {e}", allow_module_level=True)
 SCRIPT = Path(__file__).parents[1] / "plugins/neuro-realtime/skills/neuro-realtime-bci-pipeline/scripts/lsl_stream_check.py"
 spec = importlib.util.spec_from_file_location("lsl_stream_check", SCRIPT)
 lc = importlib.util.module_from_spec(spec)

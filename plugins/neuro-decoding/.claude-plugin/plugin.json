@@ -1,12 +1,12 @@
 {
   "name": "neuro-decoding",
   "description": "Decoder evaluation workflows for BCI and neural data: leak-free splits, true chance levels, cross-day stability, dataset quirks, seizure and sleep scoring, foundation-model comparisons.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "Hillock NeuroTech"
+    "name": "Hillock Labs"
   },
-  "homepage": "https://github.com/Hillock-NeuroTech/neurotech-skills",
-  "repository": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "homepage": "https://github.com/hillocklabs/hillock",
+  "repository": "https://github.com/hillocklabs/hillock",
   "license": "MIT",
   "keywords": [
     "neurotech",

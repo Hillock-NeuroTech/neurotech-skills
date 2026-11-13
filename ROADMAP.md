@@ -1,6 +1,6 @@
 # Skills: 32 workflows in five bundles plus a router
 
-Suite: **Hillock**. Repo: `Hillock-NeuroTech/neurotech-skills`. Marketplace name: `hillock`.
+Suite: **Hillock**. Repo: `hillocklabs/hillock`. Marketplace name: `hillock`.
 
 ## Naming rule
 

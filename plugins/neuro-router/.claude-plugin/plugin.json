@@ -1,12 +1,12 @@
 {
   "name": "neuro-router",
   "description": "Start here. Routes any neurotech or BCI request to the right Hillock skill, plus two foundation skills: reading every neural file format and finding public datasets.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "Hillock NeuroTech"
+    "name": "Hillock Labs"
   },
-  "homepage": "https://github.com/Hillock-NeuroTech/neurotech-skills",
-  "repository": "https://github.com/Hillock-NeuroTech/neurotech-skills",
+  "homepage": "https://github.com/hillocklabs/hillock",
+  "repository": "https://github.com/hillocklabs/hillock",
   "license": "MIT",
   "keywords": [
     "neurotech",
